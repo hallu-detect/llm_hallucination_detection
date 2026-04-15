@@ -528,10 +528,10 @@ organize source-grounding circuits.
 ## Citation
 
 ```bibtex
-@article{singh2025proxyanalyzer,
-  title     = {Detecting Hallucinations via Open-Weight Proxy Analyzer Activations},
-  author    = {Singh, Akshita and Paudel, Prabesh and Roy, Siddhartha},
-  year      = {2025},
+@article{singh2026proxyanalyzer,
+  title       = {Detecting Hallucinations via Open-Weight Proxy Analyzer Activations},
+  author      = {Singh, Akshita and Paudel, Prabesh and Roy, Siddhartha},
+  year        = {2026},
   institution = {Khoury College of Computer Sciences, Northeastern University}
 }
 ```
