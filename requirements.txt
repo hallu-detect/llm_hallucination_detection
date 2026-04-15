@@ -1,0 +1,53 @@
+# Install order matters. Run the following in your terminal
+# before using pip install -r requirements.txt:
+#
+#   pip install torch --upgrade --index-url https://download.pytorch.org/whl/cu128
+#
+# For LaTeX rendering in notebooks (optional):
+#   apt-get install -y texlive-xetex texlive-fonts-recommended texlive-plain-generic pandoc
+
+# --- Core deep learning ---
+torch>=2.0.0
+accelerate>=0.23.0
+
+# --- TransformerLens: mechanistic interpretability ---
+# We use this for all activation extraction (resid_post, pattern, mlp_out hooks)
+transformer-lens==2.18.0
+
+# --- TransformerLens hard dependencies (pinned for compatibility) ---
+beartype>=0.14.1,<0.15.0
+better-abc>=0.0.3,<0.0.4
+einops>=0.6.0
+fancy-einsum>=0.0.3
+jaxtyping>=0.2.11
+numpy>=1.26,<2
+pandas>=2.1
+protobuf>=3.20.0
+sentencepiece
+typeguard>=4.2,<5.0
+transformers-stream-generator>=0.0.5,<0.0.6
+
+# --- Transformers and HuggingFace ecosystem ---
+transformers>=4.57
+huggingface-hub>=0.23.2,<1.0
+datasets
+sentence-transformers
+
+# --- Experiment tracking ---
+wandb>=0.13.5
+
+# --- Vectara HHEM-2.1-Open (Signal S8: external faithfulness scorer) ---
+# Loaded via transformers AutoModel; no extra install needed beyond sentence-transformers
+
+# --- Visualization ---
+matplotlib
+
+# --- Machine learning: classifiers, calibration, evaluation ---
+scikit-learn
+xgboost
+lightgbm
+imbalanced-learn
+
+# --- Utilities ---
+tqdm
+rich
