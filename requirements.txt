@@ -41,6 +41,7 @@ wandb>=0.13.5
 
 # --- Visualization ---
 matplotlib
+seaborn
 
 # --- Machine learning: classifiers, calibration, evaluation ---
 scikit-learn
